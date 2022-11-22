@@ -26,34 +26,12 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Nako Web Studio</title>
+    <title>Brassco CV</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="menu-button" id="navbar-button">
-        <i class="uil uil-bars"></i>
-      </div>
-      <div class="mobile-menu-container">
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#rezume">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Testimonial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <i class="uil uil-bars" id="mobile-menu-button"></i>
       </div>
       <div class="container navbar-container">
         <div class="nav-items">
@@ -70,9 +48,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">Testimonial</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -95,7 +79,7 @@
     </section>
 
     <!-- PORTFOLIO SECTION -->
-    <section class="portfolio" id="portfolio">
+    <section class="section portfolio" id="portfolio">
       <div class="container">
         <div class="section-title-container">
           <h3 class="section-title">
@@ -142,12 +126,26 @@
               </p>
             </div>
           </div>
+
+          <!-- PORTFOLIO ITEM 4 -->
+          <div class="portfolio-item">
+            <img class="item-image" src="./assets/images/konnect.jpg" alt="" />
+            <div class="portfolio-item-title">
+              <p class="item-title">Konnnect</p>
+              <p class="item-subtitle">
+                The simple and quick access to local offers, events and news
+                from your local businesses and your favourite shops. The ONE App
+                that connects you to all your local businesses. Get the latest
+                offers around you wherever you are.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- REZUME SECTION -->
-    <section class="rezume" id="rezume">
+    <section class="section rezume" id="rezume">
       <div class="container">
         <div class="section-title-container">
           <h3 class="section-title">
@@ -374,16 +372,18 @@
           <div class="testimonial-item">
             <div class="testimonial-image-container">
               <img
-                src="./assets/images/xperson_1.jpg"
+                src="./assets/images/Siraj.jpeg"
                 alt="client_image"
                 class="testimonial-image"
               />
             </div>
             <blockquote class="testimonial-container">
               <p class="testimonial-text">
-                “Good developer having completed 3 assignments with him. His
-                responsive, adheres to good principles / standards and delivers
-                quality. Will continue to use him.”
+                “Worked on a couple of project with Stan successfully. Developed
+                a number of modules for a mobile application in ReactNative.
+                Found him to be very diligent, committed to tasks assigned, good
+                focus on quality and very responsive. Will continue to engage
+                him and he comes highly recommended.”
               </p>
               <cite>
                 Siraj Sayed - CEO of
@@ -394,28 +394,6 @@
                 >
                   Kennekt LTD</a
                 >
-              </cite>
-            </blockquote>
-          </div>
-
-          <!-- TESTIMONIAL ITEM 4 -->
-          <div class="testimonial-item">
-            <div class="testimonial-image-container">
-              <img
-                src="./assets/images/xperson_1.jpg"
-                alt="client_image"
-                class="testimonial-image"
-              />
-            </div>
-            <blockquote class="testimonial-container">
-              <p class="testimonial-text">
-                “Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in Bookmarksgrove right at the coast of the Semantics,
-                a large language ocean.”
-              </p>
-              <cite>
-                Viliam - CEO of <a href="" class="company-link"> Proxify</a>
               </cite>
             </blockquote>
           </div>
@@ -437,44 +415,51 @@
           <!-- SERVICE ITEM 1 -->
           <div class="service-item">
             <span class="service-image">
-              <span class="icon-coding"></span>
+              <i class="fa-brands fa-android icon"></i>
             </span>
             <div>
-              <h3 class="service-title">Web Development</h3>
-              <p class="service-description">I am a web developer</p>
+              <h3 class="service-title">Android App Development</h3>
+              <p class="service-description">
+                Development of Android Apps with React Native
+              </p>
             </div>
-            <div class="learn-more-container">
+            <!-- <div class="learn-more-container">
               <p class="learn-more">
                 Learn more
                 <i class="uil uil-angle-right-b"></i>
               </p>
-            </div>
+            </div> -->
           </div>
 
           <!-- SERVICE ITEM 2 -->
           <div class="service-item">
             <span class="service-image">
-              <span class="icon-smartphone-1"></span>
+              <i class="fa-brands fa-apple icon"></i>
             </span>
-            <h3 class="service-title">Mobile App Development</h3>
-            <p class="service-description">I am a web developer</p>
-            <p class="learn-more">
-              Learn more
-              <i class="uil uil-angle-right-b"></i>
+            <h3 class="service-title">iOS App Development</h3>
+            <p class="service-description">
+              Development of iOS Apps with React Native
             </p>
           </div>
 
           <!-- SERVICE ITEM 3 -->
           <div class="service-item">
             <span class="service-image">
-              <span class="icon-prototype"></span>
+              <i class="fa-brands fa-app-store-ios icon"></i>
             </span>
-            <h3 class="service-title">UX/UI</h3>
-            <p class="service-description">I am a web developer</p>
-            <p class="learn-more">
-              Learn more
-              <i class="uil uil-angle-right-b"></i>
+            <h3 class="service-title">Publish and support apps</h3>
+            <p class="service-description">
+              Publish apps to App Store and Google Play
             </p>
+          </div>
+
+          <!-- SERVICE ITEM 4 -->
+          <div class="service-item">
+            <span class="service-image">
+              <i class="fa-sharp fa-solid fa-code icon"></i>
+            </span>
+            <h3 class="service-title">Web development</h3>
+            <p class="service-description">Develop web app with React</p>
           </div>
         </div>
       </div>
@@ -513,7 +498,7 @@
               <ul class="contact-details">
                 <li>
                   <span>Email</span>
-                  "tonny.brassco@gmail.com"
+                  tonny.brassco@gmail.com
                 </li>
                 <li>
                   <span>Telegram</span>
@@ -521,7 +506,7 @@
                     class="footer-link linkedin"
                     target="_blank"
                     href="https://t.me/Brassco"
-                    >"@Brassco"</a
+                    >@Brassco</a
                   >
                 </li>
               </ul>
@@ -550,6 +535,13 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="copyrights_container">
+          <p class="copy_text">© Brassco 2022 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="assets/js/index.js"></script>
   </body>

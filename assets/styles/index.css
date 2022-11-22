@@ -71,22 +71,6 @@ body {
   font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /* ICONS */
 .icon-web-development:before {
   content: "\e915";
@@ -110,6 +94,14 @@ body {
 
 .icon-prototype:before {
   content: "\e91f";
+}
+
+.icon-linkedin:before {
+  content: "\ea73";
+}
+
+.icon-instagram:before {
+  content: "\ea6f";
 }
 
 .container {
@@ -531,7 +523,7 @@ section {
 .service-image {
   display: block;
   margin-bottom: 50px;
-  background: #edf0f2;
+  /* background: #edf0f2; */
   background: #bac964;
   width: 100px;
   height: 100px;
@@ -540,7 +532,7 @@ section {
   margin: 0 auto 30px auto;
 }
 
-.service-image span {
+.service-image .icon {
   font-size: 40px;
   color: #080b0e;
   position: absolute;
@@ -648,6 +640,38 @@ section {
 }
 .upwork-link:hover {
   color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  padding: 3em 0;
+}
+.copyrights_container {
+  margin-bottom: 3rem;
+}
+.copy_text {
+  color: rgb(148, 145, 145);
+}
+
+.social-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #333;
+  position: relative;
+  border-radius: 50%;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.social-item > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #bac964;
 }
 
 /* MEDIA QUERIES */
