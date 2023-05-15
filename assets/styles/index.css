@@ -129,7 +129,7 @@ section {
   background: #fff;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: flex-start;
   height: 54px;
   margin: 0px;
   position: fixed;
@@ -709,6 +709,10 @@ section {
   .introduce-text {
     font-size: 3.5rem;
   }
+  .navbar {
+    justify-content: center;
+  }
+
   .menu-button {
     display: none;
   }
